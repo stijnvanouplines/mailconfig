@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+    <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+        <User>
+            <DisplayName>%COMPANY_NAME%</DisplayName>
+        </User>
+        <Account>
+            <AccountType>email</AccountType>
+            <Action>settings</Action>
+            <ServiceHome>%COMPANY_URL%</ServiceHome>
+            <Protocol>
+                <Type>IMAP</Type>
+                <TTL>%TTL%</TTL>
+                <Server>%IMAP_HOST%</Server>
+                <Port>%IMAP_PORT%</Port>
+                <DomainRequired>%IMAP_DOMAIN_REQUIRED%</DomainRequired>
+                <LoginName>%EMAIL%</LoginName>
+                <SPA>off</SPA>
+                <SSL>%IMAP_SSL_ON%</SSL>
+                <AuthRequired>on</AuthRequired>
+            </Protocol>
+            <Protocol>
+                <Type>SMTP</Type>
+                <TTL>%TTL%</TTL>
+                <Server>%SMTP_HOST%</Server>
+                <Port>%SMTP_PORT%</Port>
+                <DomainRequired>%SMTP_DOMAIN_REQUIRED%</DomainRequired>
+                <LoginName>%EMAIL%</LoginName>
+                <SPA>off</SPA>
+                <SSL>%SMTP_SSL_ON%</SSL>
+                <AuthRequired>on</AuthRequired>
+                <UsePOPAuth>off</UsePOPAuth>
+                <SMTPLast>off</SMTPLast>
+            </Protocol>
+        </Account>
+    </Response>
+</Autodiscover>

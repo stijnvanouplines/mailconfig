@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>%EMAIL%</string>
+			<key>PayloadType</key>
+			<string>com.apple.mail.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadUUID</key>
+			<string>%UUID1%</string>
+			<key>PayloadIdentifier</key>
+			<string>%REVERSE_DNS%</string>
+			<key>EmailAccountDescription</key>
+			<string>%EMAIL%</string>
+			<key>EmailAccountName</key>
+			<string>%EMAIL%</string>
+			<key>EmailAccountType</key>
+			<string>EmailTypeIMAP</string>
+			<key>EmailAddress</key>
+			<string>%EMAIL%</string>
+			<key>IncomingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>IncomingMailServerHostName</key>
+			<string>%IMAP_HOST%</string>
+			<key>IncomingMailServerPortNumber</key>
+			<integer>%IMAP_PORT%</integer>
+			<key>IncomingMailServerUseSSL</key>
+			<%IMAP_SSL_TRUE% />
+			<key>IncomingMailServerUsername</key>
+			<string>%EMAIL%</string>		
+			<key>OutgoingPasswordSameAsIncomingPassword</key>
+			<true />
+			<key>OutgoingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>OutgoingMailServerHostName</key>
+			<string>%SMTP_HOST%</string>
+			<key>OutgoingMailServerPortNumber</key>
+			<integer>%SMTP_PORT%</integer>
+			<key>OutgoingMailServerUseSSL</key>
+			<%SMTP_SSL_TRUE% />
+			<key>OutgoingMailServerUsername</key>
+			<string>%EMAIL%</string>
+		</dict>
+	</array>
+	<key>PayloadOrganization</key>
+	<string>%DOMAIN%</string>
+	<key>PayloadDisplayName</key>
+	<string>Email configuration profile for %EMAIL%</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadUUID</key>
+	<string>%UUID2%</string>
+	<key>PayloadIdentifier</key>
+	<string>%REVERSE_DNS%</string>
+	<key>PayloadDescription</key>
+	<string>This profile will configure %EMAIL% on your device.</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+</dict>
+</plist>
