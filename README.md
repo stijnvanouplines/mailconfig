@@ -9,7 +9,7 @@ This project provides:
 * MobileConfig (MacOS/iOS)
 
 ## About
-This script ensures that the data about incoming / outgoing mailservers, authentication, connection security etc. are automatically entered in your mail client. AutoDiscover is supported by two frequently used mail clients: Outlook for Windows (AutoDiscover) and Thunderbird for Mac and Windows (AutoConfig). Apple Mail for macOS / iOS does not support AutoDiscover or AutoConfig, for that we have an alternative: MobileConfig! Navigate with your Apple device (Safari browser) to `mailconfig.mycompany.com/mobileconfig`, enter your email address and press the submit button. Your Apple device will recognize and open the file. You must give permission to install the profile. Then enter your password and you are ready to go!
+This script ensures that the data about incoming/outgoing mailservers, authentication, connection security etc. are automatically entered in your mail client. AutoDiscover is supported by two frequently used mail clients: Outlook for Windows (AutoDiscover) and Thunderbird for Mac and Windows (AutoConfig). Apple Mail for macOS / iOS does not support AutoDiscover or AutoConfig, for that we have an alternative: MobileConfig! Navigate with your Apple device (Safari browser) to `mailconfig.mycompany.com/mobileconfig`, enter your email address and press the submit button. Your Apple device will recognize and open the file. You must give permission to install the profile. Then enter your password and you are ready to go!
 
 ## Installation
 Clone the repo:
@@ -72,10 +72,10 @@ Add the template displayed here and fill in the open values:
     "Submit": ""
 }
 ```
-Move the file to the `languages/` folder. Thats it! Your file will now be recognized by the script and your language wil be available from the dropdown menu.
+Move the file to the `languages/` folder. That's it! Your file will now be recognized by the script and your language wil be available from the dropdown menu.
 
 *To disable a language just delete the language file from the language folder.*
 
 ## Todo
-- [] Document how to implement on a Apache/NGINX server
-- [] Document how to configure DNS settings
+- [ ] Document how to implement on a Apache/NGINX server
+- [ ] Document how to configure DNS settings
