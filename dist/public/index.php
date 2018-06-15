@@ -17,7 +17,7 @@ $config = require __DIR__ . '/../config.php';
 $mail = new MailConfig($config);
 $lang = new Localization($config['language_dir'], $config['fallback_locale']);
 
-if ($mail->determineTemplate('mobileconfig') == 'mobileconfig') {
+if ($mail->determineTemplate() == 'mobileconfig') {
     if (! $mail->extractEmailFromUrl()
         && $_SERVER['REQUEST_METHOD'] !== 'POST'
         && ! isset($_POST['submit'])
